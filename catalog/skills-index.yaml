@@ -1,0 +1,267 @@
+generated_from: skills/*/SKILL.md
+count: 44
+skills:
+- name: acceptance-criteria
+  description: Write testable acceptance criteria and acceptance tests for requirements using Given/When/Then, checklist, and rule-based formats. Use when defining the conditions that prove a requirement is correctly implemented.
+  type: component
+  path: skills/acceptance-criteria/SKILL.md
+  intent: >-
+    Create acceptance criteria that define the specific, testable conditions under which a requirement is considered satisfied. Covers three formats (Given/When/Then, checklist, rule-based), SMART criteria for requirements, and the separation between acceptance criteria (conditions) and acceptance tests (procedures). Use this to close the gap between "what does this requirement mean?" and "how do we prove it works?"
+- name: agile-requirements-process
+  description: Orchestrate requirements engineering for agile projects using just-in-time elaboration and continuous validation. Use when adopting agile and need to adapt RE practices without losing rigor.
+  type: workflow
+  path: skills/agile-requirements-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through requirements engineering in agile contexts -- from initial product vision through backlog seeding, iteration planning, just-in-time elaboration, and continuous validation via sprint reviews. This workflow adapts traditional RE techniques for agile delivery while preserving the core principles of elicitation, analysis, specification, and validation. Use this when the team is doing agile but requirements are either too thin (stories without context) or too heavy (full SRS before sprint 1). Addresses the "requirements engineering iceberg" where most RE work in agile is invisible below the surface.
+- name: analysis-advisor
+  description: Select the right analysis and modeling techniques based on requirement type, system complexity, and team experience. Use when deciding which visual models and analysis methods to apply during requirements analysis.
+  type: interactive
+  path: skills/analysis-advisor/SKILL.md
+  intent: >-
+    Guide requirements engineers in selecting the most effective combination of analysis and modeling techniques for their specific system and team context. Asks adaptive questions about requirement type focus, system complexity, team modeling experience, and key concerns to recommend from use cases, user stories, process models, data models, state models, decision tables, and dialog maps. Use this when starting analysis and unsure which techniques will yield the most insight, or when the team defaults to one technique (typically use cases) regardless of system characteristics.
+- name: business-rule
+  description: Document business rules as structured, traceable specifications separate from functional requirements. Use when capturing organizational policies, regulations, calculations, or constraints that govern system behavior.
+  type: component
+  path: skills/business-rule/SKILL.md
+  intent: >-
+    Identify, classify, and document business rules that constrain or govern system behavior. Business rules exist independently of any software system -- they are organizational policies, regulations, mathematical formulas, and domain constraints that must be reflected in requirements. Use this to separate the enduring business logic from the transient software implementation, ensuring rules are maintained, traced, and consistently applied across multiple features.
+- name: change-control-advisor
+  description: Evaluate change requests, perform impact analysis, and manage the change control process. Use when requirements changes are proposed and you need a structured approach to assess, approve, and track them.
+  type: interactive
+  path: skills/change-control-advisor/SKILL.md
+  intent: >-
+    Guide requirements engineers through the change control process -- from initial change request through impact analysis, approval decision, and implementation tracking. Covers the Change Control Board (CCB) model, change request attributes, impact analysis techniques using traceability, and scope creep detection. Use this when requirements are baselined and stakeholders propose changes that need structured evaluation to prevent uncontrolled scope growth while still allowing necessary evolution.
+- name: change-control-process
+  description: Establish and operate a change control process for requirements changes. Use when projects lack a structured way to evaluate, approve, and track requirement modifications after baselining.
+  type: workflow
+  path: skills/change-control-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through establishing a Change Control Board (CCB), defining a change request lifecycle, receiving and classifying proposed changes, performing impact analysis, making disposition decisions, and verifying implemented changes. This workflow prevents uncontrolled scope creep while ensuring legitimate changes are evaluated fairly and implemented reliably. Use this when changes are either rubber-stamped without analysis or blocked without evaluation, both of which damage projects.
+- name: change-impact-analysis
+  description: Assess the implications, affected work products, and effort for a proposed requirements change. Use when a change request arrives and you need to determine whether to approve, defer, or reject it.
+  type: component
+  path: skills/change-impact-analysis/SKILL.md
+  intent: >-
+    Guide requirements engineers through a structured three-step impact analysis for proposed requirements changes. Covers the implications checklist, identification of all affected work products, and estimation of schedule and cost impact. Includes the 18 standard change request attributes from Wiegers. Use this when a change request arrives and the change control board needs a thorough assessment before making an approve/defer/reject decision.
+- name: context-diagram
+  description: Create system context diagrams that define the boundary between the system and its external entities. Use when establishing scope, identifying interfaces, and ensuring all external interactions are captured in requirements.
+  type: component
+  path: skills/context-diagram/SKILL.md
+  intent: >-
+    Create context diagrams that show the system as a single process with all external entities (users, systems, devices) and the data flows between them. Use this to establish a clear system boundary, identify all external interfaces that need requirements, and provide a visual scope definition that stakeholders can review quickly. The context diagram is the highest level of a data flow diagram and is the single most effective tool for preventing scope ambiguity.
+- name: data-dictionary
+  description: Define data elements, structures, and compositions using formal data dictionary notation. Use when documenting the data model to eliminate ambiguity about what each data item means, contains, and how it relates to other data.
+  type: component
+  path: skills/data-dictionary/SKILL.md
+  intent: >-
+    Create a structured data dictionary that formally defines every data element referenced in requirements, including primitive types, composite structures, repeating groups, and valid values. Use this to eliminate the ambiguity that comes from undefined terms like "customer information" or "order details," to detect missing requirements by analyzing data flows, and to provide developers with precise data specifications. Includes CRUD matrix analysis for completeness checking.
+- name: data-modeling
+  description: Create entity-relationship diagrams (ERDs) to model data entities, attributes, and relationships. Use when requirements involve structured data and you need to visualize how entities relate to each other.
+  type: component
+  path: skills/data-modeling/SKILL.md
+  intent: >-
+    Build entity-relationship diagrams that identify the key data entities in a system, define their attributes, and specify the relationships (including cardinality and participation constraints) between them. Use this to translate requirements and use cases into a visual data model that exposes missing requirements, clarifies data ownership, and provides a bridge between business understanding and database design. Connects to the data dictionary for detailed attribute definitions.
+- name: decision-table
+  description: Create decision tables and decision trees to specify complex business logic with multiple conditions and outcomes. Use when requirements involve combinatorial logic that is error-prone to express in prose.
+  type: component
+  path: skills/decision-table/SKILL.md
+  intent: >-
+    Express complex business logic as decision tables (conditions x actions matrix) or decision trees (branching visual format). Use this when requirements involve multiple interacting conditions that determine different system behaviors -- situations where prose requirements become ambiguous, incomplete, or contradictory. Decision tables systematically guarantee that every combination of conditions is addressed, making them the most reliable tool for specifying combinatorial business rules.
+- name: dialog-map
+  description: Create dialog maps to model user-system navigation flows, screen inventories, and transition rules. Use when requirements involve user interfaces and you need to specify how users move between screens.
+  type: component
+  path: skills/dialog-map/SKILL.md
+  intent: >-
+    Build dialog maps that model the navigation paths users follow through a system's user interface. Use this to create a screen inventory, define transition rules between screens, and discover missing UI requirements by systematically mapping every navigation path from every screen. Dialog maps connect directly to use cases by showing which screens support which use case steps, and they reveal requirements that use cases miss such as back-navigation, error recovery, and help access.
+- name: elicitation-interview
+  description: Plan and conduct stakeholder interviews that uncover real requirements using structured question progressions. Use when you need to elicit requirements directly from users, sponsors, or domain experts.
+  type: component
+  path: skills/elicitation-interview/SKILL.md
+  intent: >-
+    Plan and conduct requirements elicitation interviews that move from broad context questions to specific behavioral questions, using active listening and past-behavior techniques to uncover real needs rather than hypothetical wishes. Covers interview preparation, question categories (context-free, context-specific, meta-questions), the "Mom Test" principle of asking about past behavior, and techniques for capturing and validating interview notes.
+- name: elicitation-technique-selector
+  description: Choose the right requirements elicitation technique based on project context, stakeholder access, and information needs. Use when deciding between interviews, workshops, observations, surveys, and other elicitation methods.
+  type: interactive
+  path: skills/elicitation-technique-selector/SKILL.md
+  intent: >-
+    Guide requirements engineers in selecting the most effective elicitation technique(s) for their specific situation by asking adaptive questions about stakeholder access, type of information needed, project constraints, and organizational culture. Use this to avoid defaulting to interviews for every situation when workshops, observation, document analysis, or prototyping might be more effective. Outputs a recommended technique combination with practical guidance tailored to your context.
+- name: moscow-prioritization
+  description: Categorize requirements into Must/Should/Could/Won't buckets with allocation guidelines. Use when timeboxed delivery requires clear scope boundaries and stakeholder alignment on what is in vs. out.
+  type: component
+  path: skills/moscow-prioritization/SKILL.md
+  intent: >-
+    Guide requirements engineers through the MoSCoW prioritization method to categorize requirements into four distinct buckets with clear definitions and allocation guidelines. Use this when working with timeboxed iterations, when stakeholders need a simple framework to agree on scope, or when release planning requires explicit inclusion/exclusion decisions. Includes the 60/20/20 allocation rule and guidelines for when MoSCoW is appropriate vs. when a more quantitative method is needed.
+- name: observation-analysis
+  description: Plan and conduct observation sessions to discover unstated requirements by watching users work. Use when interviews alone miss tacit knowledge, workarounds, or workflow inefficiencies.
+  type: component
+  path: skills/observation-analysis/SKILL.md
+  intent: >-
+    Plan and conduct observation sessions (job shadowing) that reveal unstated requirements, workarounds, and workflow inefficiencies that users cannot or will not articulate in interviews. Covers active vs. passive observation, session planning, what to record, how to identify pain points, and how to convert observations into requirements. Use this when you need to understand the real work environment, not just what stakeholders describe.
+- name: prioritization-advisor-re
+  description: Choose a requirements prioritization method based on stakeholder count, requirement volume, and decision context. Use when deciding between MoSCoW, value/cost/risk, pairwise comparison, and other prioritization approaches.
+  type: interactive
+  path: skills/prioritization-advisor-re/SKILL.md
+  intent: >-
+    Guide requirements engineers in selecting and applying the right prioritization technique for their specific context. Covers in/out sorting, three-level scales, MoSCoW, pairwise comparison, $100 allocation, and value/cost/risk spreadsheets. Asks adaptive questions about stakeholder count, requirement volume, conflict level, and available data to recommend the most effective approach. Use this when "everything is priority 1" and you need a structured method to force real decisions.
+- name: process-modeling
+  description: Create activity diagrams and swim-lane diagrams that model cross-functional processes and derive requirements. Use when you need to visualize workflows, identify handoffs, and find missing requirements.
+  type: component
+  path: skills/process-modeling/SKILL.md
+  intent: >-
+    Create process models using activity diagrams and swim-lane diagrams to visualize workflows, identify cross-functional handoffs, and derive functional requirements from process flows. Covers activity diagram elements (actions, decisions, forks, joins, swimlanes), swim-lane diagrams for cross-functional processes, techniques for deriving requirements from models, and stakeholder validation of process models. Use this when a process spans multiple actors or departments and you need to understand the full flow before writing requirements.
+- name: prototyping-strategy
+  description: Select the right prototyping approach based on project risks, requirements uncertainty, and stakeholder needs. Use when deciding what to prototype, at what fidelity, and how to evaluate the results.
+  type: interactive
+  path: skills/prototyping-strategy/SKILL.md
+  intent: >-
+    Guide requirements engineers in selecting the most effective prototyping approach by asking adaptive questions about the purpose of the prototype, desired fidelity level, lifecycle intent, and evaluation method. Use this when requirements are unclear, UI design is uncertain, technical feasibility is in question, or stakeholders need something tangible to react to. Outputs a recommended prototyping approach with scope definition and an evaluation plan.
+- name: quality-attribute
+  description: Specify non-functional requirements using Planguage notation with measurable scales, meters, goals, and trade-off analysis. Use when quality attributes like performance, security, or usability need quantified, testable specifications.
+  type: component
+  path: skills/quality-attribute/SKILL.md
+  intent: >-
+    Guide requirements engineers through a systematic process for identifying, prioritizing, and specifying quality attributes (non-functional requirements). Uses a five-step process from broad taxonomy to precise Planguage specifications with scale/meter/goal notation. Includes quality attribute trade-off analysis to make explicit which attributes take priority when they conflict (e.g., security vs. usability). Use this when vague NFRs like "the system shall be fast" need to become testable, measurable specifications.
+- name: questionnaire-design
+  description: Design requirements questionnaires with effective question types, scales, and bias-resistant ordering. Use when you need to gather requirements data from many stakeholders simultaneously.
+  type: component
+  path: skills/questionnaire-design/SKILL.md
+  intent: >-
+    Design and deploy requirements questionnaires that gather structured data from a broad stakeholder audience. Covers when questionnaires work (vs. interviews), open vs. closed question design, scale types (Likert, ranking, forced choice), question ordering to avoid bias, sample size and distribution strategies, and analysis of results. Use this when you need to validate requirements priorities, gather preferences, or reach stakeholders you cannot interview individually.
+- name: re-process-improvement
+  description: Assess, plan, pilot, and measure improvements to your requirements engineering processes using a 4-phase improvement cycle. Use when requirements defects, rework, or stakeholder dissatisfaction signal that current RE practices need upgrading.
+  type: workflow
+  path: skills/re-process-improvement/SKILL.md
+  intent: >-
+    Guide requirements engineers and process owners through a structured improvement cycle for requirements engineering practices. Orchestrates four phases -- assess current RE practices, plan targeted improvements, create and pilot new process assets, and evaluate results using metrics. Covers root cause analysis with Ishikawa diagrams, Goal-Question-Metric (GQM) measurement, process asset inventories for requirements development and management, and learning curve management to sustain adoption through the "valley of despair." Use this when project post-mortems repeatedly cite requirements problems, when RE practices are ad hoc, or when the organization wants to mature its RE capability.
+- name: re-tool-selection
+  description: Select and evaluate requirements engineering tools based on project context, current maturity, and integration needs. Use when choosing between RM tools, deciding to upgrade from spreadsheets, or evaluating commercial RE tool suites.
+  type: interactive
+  path: skills/re-tool-selection/SKILL.md
+  intent: >-
+    Guide requirements engineers through selecting appropriate tools for requirements development (RD) and requirements management (RM) based on project size, current tool maturity, key pain points, and integration needs. Covers the distinction between RD and RM tools, a 7-step evaluation process, tool adoption strategies, and culture change management. Use this when the team is outgrowing spreadsheets, evaluating commercial RM tools, or needs to align tool selection with actual workflow needs rather than vendor marketing.
+- name: requirements-analysis-process
+  description: Transform raw elicitation outputs into analyzed, modeled, and structured requirements. Use when moving from "what stakeholders said" to "what the system shall do" through visual modeling, data analysis, and requirements decomposition.
+  type: workflow
+  path: skills/requirements-analysis-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through the analysis process that transforms raw elicitation outputs (notes, transcripts, brainstorms) into structured, analyzed requirements. Orchestrates visual modeling (DFDs, state diagrams, decision tables), data analysis (data dictionary, CRUD matrix, ERDs), requirement decomposition, and conflict resolution. Use this when you have elicitation outputs that need to be refined, decomposed, modeled, and organized into a coherent specification.
+- name: requirements-baselining
+  description: Establish and manage requirements baselines with version control, entry criteria, and approval processes. Use when requirements reach a stable state and need a formal reference point for change control.
+  type: component
+  path: skills/requirements-baselining/SKILL.md
+  intent: >-
+    Guide requirements engineers through establishing formal requirements baselines with proper version labeling, entry criteria, configuration management, and approval processes. Use this when requirements have been reviewed and approved to a level of stability that justifies a formal snapshot -- the reference point against which all future changes are measured. Without baselining, there is no "before" for change control, no version for traceability, and no agreement on what was actually committed.
+- name: requirements-development-process
+  description: Orchestrate the complete requirements development lifecycle from vision through validation. Use when starting a new project or feature set and need a structured end-to-end requirements process.
+  type: workflow
+  path: skills/requirements-development-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through the complete requirements development lifecycle -- from establishing the project foundation (vision, stakeholders, scope) through elicitation, analysis, specification, and validation. This is the meta-workflow that orchestrates all four subdisciplines of requirements engineering: Elicitation, Analysis, Specification, and Validation. Use this when starting a new project or major feature set and need a structured process that ties together all the individual RE skills into a coherent end-to-end approach. Includes decision points between phases, iteration guidance, and timeline estimates for different project sizes.
+- name: requirements-elicitation-workshop
+  description: Plan and execute a structured requirements elicitation session using multiple techniques. Use when you need to systematically gather requirements from stakeholders through a planned combination of interviews, workshops, observation, and document analysis.
+  type: workflow
+  path: skills/requirements-elicitation-workshop/SKILL.md
+  intent: >-
+    Guide requirements engineers through planning and executing a complete elicitation session -- from preparation through facilitation to post-session synthesis. Orchestrates elicitation techniques (interviews, workshops, observation, document analysis) into a structured session plan with specific agendas, participant roles, and expected outputs. Use this when ad-hoc elicitation is producing incomplete or inconsistent results and you need a repeatable, thorough process.
+- name: requirements-management-process
+  description: Establish and maintain requirements baselines, version control, attribute tracking, and status monitoring throughout the project lifecycle. Use when setting up the ongoing management infrastructure for a requirements set.
+  type: workflow
+  path: skills/requirements-management-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through establishing and maintaining the requirements management infrastructure -- baselining, version control, requirement attributes, status tracking, and requirements burndown. This is the ongoing operational process that keeps requirements organized, tracked, and controlled after they are initially developed. Use this when requirements are developed ad-hoc with no version control, no status tracking, and no way to answer "how many requirements are done?"
+- name: requirements-reuse
+  description: Systematically reuse requirements across projects using patterns, catalogs, and product-line strategies. Use when building systems similar to past projects or establishing a reuse repository for your organization.
+  type: component
+  path: skills/requirements-reuse/SKILL.md
+  intent: >-
+    Guide requirements engineers in identifying reuse opportunities, selecting appropriate reuse mechanisms (copy, reference, adapt), and building a sustainable requirements reuse repository. Covers the three dimensions of reuse (extent, modification, mechanism), requirement patterns from Withall, reuse scenarios (product lines, re-engineering, similar projects), and the cultural barriers (NIH and NAH syndromes) that block effective reuse. Use this to reduce elicitation effort, improve consistency, and avoid re-inventing requirements that already exist in your organization.
+- name: requirements-review-advisor
+  description: Choose and plan a requirements review approach, from informal walkthroughs to formal Fagan inspections. Use when deciding how rigorously to review requirements and structuring the review process for maximum defect detection.
+  type: interactive
+  path: skills/requirements-review-advisor/SKILL.md
+  intent: >-
+    Guide requirements engineers in selecting the right review approach (informal review, walkthrough, or formal inspection) and planning the review process. Covers the Fagan inspection method with its six stages (planning, overview, preparation, meeting, rework, follow-up), defect checklists for requirements, and metrics for review effectiveness. Use this when requirements are ready for review and you need to choose the right level of rigor based on project risk, available resources, and quality goals.
+- name: requirements-risk-assessment
+  description: Identify and mitigate risks specific to requirements engineering using condition-consequence statements and risk exposure analysis. Use when requirements quality, completeness, or stability threatens project success.
+  type: component
+  path: skills/requirements-risk-assessment/SKILL.md
+  intent: >-
+    Guide requirements engineers through identifying, analyzing, and mitigating risks that originate from requirements activities -- elicitation gaps, specification ambiguity, unstable requirements, inadequate validation, and poor change management. Uses the condition-consequence format for precise risk statements and risk exposure (probability x impact) for prioritization. Use this to prevent requirements-driven project failures before they become costly downstream defects.
+- name: requirements-status-tracking
+  description: Track requirements through their lifecycle from Proposed to Verified, with status distributions and progress reporting. Use when you need visibility into how requirements are progressing and where bottlenecks exist.
+  type: component
+  path: skills/requirements-status-tracking/SKILL.md
+  intent: >-
+    Guide requirements engineers through establishing and maintaining a requirements status tracking system with defined lifecycle states, transition rules, status distribution visualization, and progress reporting. Covers both traditional and agile status lifecycles. Use this when management asks "how far along are we with the requirements?" or when you need to identify bottlenecks, stale requirements, or coverage gaps in the development process.
+- name: requirements-testing
+  description: Derive test cases from requirements, use cases, and business rules to verify testability and completeness. Use when you need to validate that requirements are verifiable and to plan acceptance testing early.
+  type: component
+  path: skills/requirements-testing/SKILL.md
+  intent: >-
+    Derive test cases directly from requirements documents before any code is written. Use this to verify that every requirement is testable, to expose ambiguous or incomplete requirements through the discipline of writing concrete test steps, and to produce an early acceptance test plan. Includes techniques for deriving tests from use cases, functional requirements, business rules, and quality attributes. Ensures that fit criteria are defined for every requirement.
+- name: requirements-traceability
+  description: Build and maintain a requirements traceability matrix linking business objectives, requirements, design, and tests. Use when you need to demonstrate coverage, perform impact analysis, or satisfy regulatory audit requirements.
+  type: component
+  path: skills/requirements-traceability/SKILL.md
+  intent: >-
+    Create a traceability matrix that establishes bidirectional links between business objectives, requirements, design elements, and test cases. Use this to answer four critical questions: (1) Does every requirement trace to a business need? (2) Does every business need have requirements? (3) What is affected when a requirement changes? (4) Is every requirement tested? Traceability is essential for impact analysis, coverage verification, and regulatory compliance.
+- name: requirements-validation-process
+  description: Validate requirements through structured reviews, inspections, prototyping, and conceptual testing. Use when requirements need formal verification before being baselined and released to development.
+  type: workflow
+  path: skills/requirements-validation-process/SKILL.md
+  intent: >-
+    Guide requirements engineers through the complete validation process that verifies requirements are correct, complete, feasible, and unambiguous before they are baselined. Orchestrates formal inspections, prototype-based validation, conceptual testing (testing requirements with test scenarios before code exists), and acceptance criteria verification. Use this as the quality gate between "requirements written" and "requirements baselined" to catch defects when they cost pennies to fix instead of dollars.
+- name: specification-review-checklist
+  description: Review requirements and SRS documents using structured checklists for quality attributes and defect detection. Use when inspecting individual requirements or an entire specification for completeness, correctness, and clarity.
+  type: component
+  path: skills/specification-review-checklist/SKILL.md
+  intent: >-
+    Provide structured checklists for reviewing both individual requirements and complete SRS documents. Use this during formal inspections, peer reviews, or self-reviews to systematically detect defects including ambiguity, incompleteness, incorrectness, inconsistency, and unverifiability. Covers the 10 characteristics of well-written individual requirements and the 8 characteristics of a well-written SRS, with a defect taxonomy for classifying findings.
+- name: srs-document
+  description: Build a Software Requirements Specification using a structured template with labeled requirements, data dictionary, and external interfaces. Use when a project requires a formal, baselined requirements document.
+  type: component
+  path: skills/srs-document/SKILL.md
+  intent: >-
+    Guide requirements engineers through creating a complete Software Requirements Specification (SRS) document that organizes functional requirements by system feature, documents data requirements, external interfaces, quality attributes, and constraints. Use this when the project demands a formal, reviewable, traceable requirements baseline -- particularly for regulated, contracted, or large-scale systems where informal documentation is insufficient.
+- name: stakeholder-analysis
+  description: Identify and classify stakeholders, user classes, and their requirements influence. Use when starting a project to ensure all perspectives are represented and no critical voices are missed.
+  type: component
+  path: skills/stakeholder-analysis/SKILL.md
+  intent: >-
+    Systematically identify all stakeholders and user classes for a software project, classify them by type and influence, and establish appropriate engagement strategies. Use this to avoid the costly mistake of discovering a key stakeholder late in the project, to resolve conflicting requirements by understanding each group's priorities, and to ensure the right people are involved at the right time.
+- name: state-modeling
+  description: Create state-transition diagrams and state tables to model object lifecycle behavior. Use when requirements involve objects that change state based on events and where valid transitions must be constrained.
+  type: component
+  path: skills/state-modeling/SKILL.md
+  intent: >-
+    Model the lifecycle of domain objects using state-transition diagrams and state tables. Use this when requirements involve objects (orders, tickets, chemicals, accounts) that move through defined states in response to events, and where invalid transitions must be prevented. State modeling exposes missing requirements by systematically asking "what happens in every state when every event occurs?" and is especially effective at uncovering exception handling gaps.
+- name: use-case
+  description: Write structured use case specifications with triggers, flows, and exceptions. Use when documenting user-system interactions that require detailed behavioral specification beyond what user stories provide.
+  type: component
+  path: skills/use-case/SKILL.md
+  intent: >-
+    Create detailed use case specifications that capture how users interact with a system to achieve specific goals. Each use case documents the actor, preconditions, trigger, normal flow, alternative flows, exceptions, and postconditions. Use this when user stories are insufficient for capturing complex interaction sequences, branching logic, or exception handling -- particularly for systems with regulatory, safety, or high-reliability requirements.
+- name: user-story-re
+  description: Write requirements-focused user stories with INVEST criteria and structured acceptance criteria. Use when capturing user needs in agile RE contexts where traceability and testability matter.
+  type: component
+  path: skills/user-story-re/SKILL.md
+  intent: >-
+    Create user stories that satisfy requirements engineering standards -- not just agile placeholders for conversation, but traceable, testable, prioritized expressions of user need. Each story follows the "As a / I want / So that" format with structured acceptance criteria, and is evaluated against the INVEST criteria (Independent, Negotiable, Valuable, Estimable, Small, Testable). Use this when working in agile or hybrid environments where user stories serve as the primary requirements artifact.
+- name: value-cost-risk-analysis
+  description: Prioritize requirements using a multi-factor value/cost/risk model with relative scoring. Use when stakeholders disagree on priority or when simple ranking fails to capture trade-offs.
+  type: component
+  path: skills/value-cost-risk-analysis/SKILL.md
+  intent: >-
+    Guide requirements engineers through the Wiegers value/cost/risk priority model to produce a defensible, quantitative prioritization of requirements. Uses relative benefit and penalty scoring (1-9 scale), cost and risk estimation, and a priority formula that balances value against implementation difficulty. Use this when stakeholders argue about what to build first, when gut-feel prioritization leads to political battles, or when you need a transparent basis for release planning decisions.
+- name: vision-and-scope
+  description: Create a vision and scope document that captures business requirements, project scope, and stakeholder context. Use when launching a new project or product to align all parties on objectives and boundaries.
+  type: component
+  path: skills/vision-and-scope/SKILL.md
+  intent: >-
+    Guide requirements engineers through building a vision and scope document that defines business requirements (objectives, success metrics, risk), project scope (features, limitations, exclusions), and business context (stakeholder profiles, priorities, deployment). Use this to prevent scope creep, align stakeholders on what the project will and will not deliver, and provide a stable foundation for all downstream requirements work.
+- name: writing-requirements
+  description: Write individual requirements that are clear, testable, and unambiguous using EARS templates and quality checklists. Use when drafting or improving shall-statements and functional requirements.
+  type: component
+  path: skills/writing-requirements/SKILL.md
+  intent: >-
+    Write excellent individual requirements using proven sentence patterns (EARS templates), shall/should/will conventions, and a quality self-check against the ten characteristics of excellent requirements. Covers positive vs. negative requirements, ambiguity avoidance with a TBD watchlist, and verifiability checks. Use this when you need to draft new requirements or improve existing ones that are vague, untestable, or ambiguous.

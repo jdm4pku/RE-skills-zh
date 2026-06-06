@@ -1,0 +1,154 @@
+generated_from: commands/*.md
+count: 10
+commands:
+- name: develop-requirements
+  description: Run the complete requirements development lifecycle from vision through validated, baselined requirements.
+  argument_hint: <project, product, or system name and context>
+  uses:
+  - requirements-development-process
+  - vision-and-scope
+  - stakeholder-analysis
+  - context-diagram
+  - elicitation-technique-selector
+  - srs-document
+  - requirements-validation-process
+  outputs:
+  - Vision and scope document
+  - Stakeholder register
+  - Baselined SRS with validated requirements
+  path: commands/develop-requirements.md
+- name: manage-requirements
+  description: Set up and run requirements management for baselined requirements.
+  argument_hint: <project name and baseline context>
+  uses:
+  - requirements-management-process
+  - requirements-baselining
+  - change-control-process
+  - change-impact-analysis
+  - requirements-traceability
+  - requirements-status-tracking
+  outputs:
+  - Baselined requirements with version control
+  - Change control board charter and process
+  - Traceability matrix
+  - Status tracking dashboard
+  path: commands/manage-requirements.md
+- name: elicit
+  description: Plan and execute requirements elicitation with technique selection.
+  argument_hint: <stakeholder group, feature area, or elicitation goal>
+  uses:
+  - elicitation-technique-selector
+  - elicitation-interview
+  - observation-analysis
+  - questionnaire-design
+  - requirements-elicitation-workshop
+  outputs:
+  - Elicitation strategy with technique selection rationale
+  - Prepared session guides
+  - Captured requirements and findings
+  path: commands/elicit.md
+- name: write-srs
+  description: Create a structured SRS document with data dictionary and acceptance criteria.
+  argument_hint: <project or feature area to specify>
+  uses:
+  - srs-document
+  - writing-requirements
+  - data-dictionary
+  - acceptance-criteria
+  - specification-review-checklist
+  outputs:
+  - Structured SRS document
+  - Data dictionary
+  - Acceptance criteria
+  - Self-review results
+  path: commands/write-srs.md
+- name: analyze
+  description: Model and refine requirements using appropriate analysis techniques.
+  argument_hint: <feature area or domain to model>
+  uses:
+  - analysis-advisor
+  - use-case
+  - user-story-re
+  - process-modeling
+  - data-modeling
+  - state-modeling
+  - decision-table
+  - dialog-map
+  - quality-attribute
+  outputs:
+  - Selected modeling techniques with rationale
+  - Analysis models
+  - Quality attribute specifications
+  path: commands/analyze.md
+- name: validate
+  description: Review and validate requirements before baselining.
+  argument_hint: <SRS or requirements set to validate>
+  uses:
+  - requirements-review-advisor
+  - requirements-validation-process
+  - requirements-testing
+  - prototyping-strategy
+  - specification-review-checklist
+  outputs:
+  - Validation plan
+  - Defect log
+  - Validation report
+  path: commands/validate.md
+- name: prioritize
+  description: Select the right prioritization method and rank requirements.
+  argument_hint: <requirements set, constraints, and decision context>
+  uses:
+  - prioritization-advisor-re
+  - moscow-prioritization
+  - value-cost-risk-analysis
+  - requirements-allocation
+  outputs:
+  - Prioritization method selection
+  - Ranked requirements
+  - Release allocation plan
+  path: commands/prioritize.md
+- name: agile-re
+  description: Run requirements engineering in an agile context.
+  argument_hint: <product or feature area for agile RE>
+  uses:
+  - agile-requirements-process
+  - vision-and-scope
+  - user-story-re
+  - acceptance-criteria
+  - requirements-validation-process
+  outputs:
+  - Lightweight vision and scope
+  - Seeded product backlog
+  - Sprint-ready requirements
+  path: commands/agile-re.md
+- name: analyze-change
+  description: Process a requirements change request through impact analysis.
+  argument_hint: <change request description and context>
+  uses:
+  - change-control-process
+  - change-impact-analysis
+  - requirements-traceability
+  outputs:
+  - Classified change request
+  - Impact analysis with effort estimate
+  - CCB decision recommendation
+  path: commands/analyze-change.md
+- name: model-requirements
+  description: 创建完整的需求建模文档，涵盖功能模型（用例）、行为模型（流程/状态/决策/会话）和数据模型（ER图），生成 PlantUML 图表并渲染为图片，输出 Markdown 文档。
+  argument_hint: <项目名称或愿景与范围文档路径>
+  uses:
+  - use-case
+  - process-modeling
+  - state-modeling
+  - decision-table
+  - dialog-map
+  - data-modeling
+  outputs:
+  - 用例规约（含 PlantUML 用例图）
+  - 流程模型（泳道活动图）
+  - 状态模型（状态转换图+状态表）
+  - 决策表
+  - 会话图（Dialog Map）
+  - 数据模型（ER 图）
+  - 模型交叉验证报告
+  path: commands/model-requirements.md
