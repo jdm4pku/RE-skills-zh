@@ -134,7 +134,7 @@ commands:
   - CCB decision recommendation
   path: commands/analyze-change.md
 - name: model-requirements
-  description: 创建完整的需求建模文档，涵盖功能模型（用例）、行为模型（流程/状态/决策/会话）和数据模型（ER图），生成 PlantUML 图表并渲染为图片，输出 Markdown 文档。
+  description: 创建完整的需求建模文档，涵盖功能模型（用例）、行为模型（流程/状态/决策/会话）和数据模型（DFD + ER图），生成 PlantUML 图表并渲染为图片，输出 Markdown 文档。
   argument_hint: <项目名称或愿景与范围文档路径>
   uses:
   - use-case
@@ -142,13 +142,15 @@ commands:
   - state-modeling
   - decision-table
   - dialog-map
+  - data-flow-diagram
   - data-modeling
   outputs:
   - 用例规约（含 PlantUML 用例图）
-  - 流程模型（泳道活动图）
-  - 状态模型（状态转换图+状态表）
+  - 每个用例的活动图和序列图
+  - 系统状态全局概览图 + 各对象详细状态图
   - 决策表
-  - 会话图（Dialog Map）
+  - 系统全局导航图 + 各用例详细会话图
+  - 数据流图（DFD Level 0 + Level 1）
   - 数据模型（ER 图）
   - 模型交叉验证报告
   path: commands/model-requirements.md

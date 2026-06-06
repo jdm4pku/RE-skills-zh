@@ -10,7 +10,7 @@
 │   ██║  ██║███████╗    ███████║██║  ██╗██║███████╗███████╗███████║│
 │   ╚═╝  ╚═╝╚══════╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝│
 │                                                                  │
-│   44 个需求工程技能 · 覆盖 8 个生命周期阶段                      │
+│   45 个需求工程技能 · 覆盖 8 个生命周期阶段                      │
 │   Claude Code · Codex · 以及任何能读取 Markdown 的 AI 智能体     │
 │                                                                  │
 │   v1.0 · 2026 年 4 月 · 基于《软件需求》第三版                  │
@@ -19,7 +19,7 @@
 
 **让你的 AI 智能体（以及你自己）掌握专业级的需求工程方法。**
 
-44 个经过验证的技能，覆盖从业务愿景到变更管理的完整需求工程生命周期。每个技能都教授技术背后的"为什么"，提供 AI 可执行的分步指导，并包含模板、范例和交叉引用。
+45 个经过验证的技能，覆盖从业务愿景到变更管理的完整需求工程生命周期。每个技能都教授技术背后的"为什么"，提供 AI 可执行的分步指导，并包含模板、范例和交叉引用。
 
 基于 Karl Wiegers & Joy Beatty 的《软件需求》第三版（*Software Requirements, Third Edition*）——需求工程实践的权威参考。
 
@@ -79,9 +79,9 @@
 
 ---
 
-## 全部 44 个技能
+## 全部 45 个技能
 
-### 组件技能 (29)
+### 组件技能 (30)
 
 | 技能 | 用途 |
 |------|------|
@@ -90,6 +90,7 @@
 | **[change-impact-analysis](skills/change-impact-analysis/SKILL.md)** | 评估需求变更的影响范围、受影响工作产品和工作量 |
 | **[context-diagram](skills/context-diagram/SKILL.md)** | 用外部实体和数据流定义系统边界 |
 | **[data-dictionary](skills/data-dictionary/SKILL.md)** | 使用形式化表示法和 CRUD 分析定义数据元素、结构和组成 |
+| **[data-flow-diagram](skills/data-flow-diagram/SKILL.md)** | 创建分层数据流图（DFD），将系统分解为过程、数据存储和数据流 |
 | **[data-modeling](skills/data-modeling/SKILL.md)** | 创建实体关系图（ER 图），建模数据实体、属性和关系 |
 | **[decision-table](skills/decision-table/SKILL.md)** | 用决策表和决策树描述复杂的组合业务逻辑 |
 | **[dialog-map](skills/dialog-map/SKILL.md)** | 建模用户-系统导航流、屏幕清单和转换规则 |
@@ -144,14 +145,15 @@
 
 ## 按阶段分类
 
-44 个技能对应需求工程生命周期的 8 个阶段：
+45 个技能对应需求工程生命周期的 8 个阶段：
 
 ```text
 阶段 1: 基础                 阶段 2: 需求获取              阶段 3: 分析与建模
 ├─ vision-and-scope          ├─ elicitation-technique-     ├─ use-case
 ├─ stakeholder-analysis      │  selector                   ├─ user-story-re
 ├─ context-diagram           ├─ elicitation-interview      ├─ process-modeling
-└─ business-rule             ├─ observation-analysis       ├─ data-modeling
+└─ business-rule             ├─ observation-analysis       ├─ data-flow-diagram
+                             ├─ questionnaire-design       ├─ data-modeling
                              ├─ questionnaire-design       ├─ state-modeling
                              └─ requirements-              ├─ decision-table
                                 elicitation-workshop       ├─ dialog-map
@@ -283,7 +285,7 @@ RE-Skills-zh/
 ├── CODEX.md                  # OpenAI Codex 的 agent 指令
 ├── AGENTS.md                 # 通用 agent 操作规范
 ├── CONTRIBUTING.md           # 贡献者指南
-├── skills/                   # 全部 44 个技能目录
+├── skills/                   # 全部 45 个技能目录
 │   ├── skill-name/
 │   │   ├── SKILL.md          # 技能主体内容
 │   │   ├── template.md       # 填空模板（29 个组件技能）
@@ -314,9 +316,9 @@ RE-Skills-zh/
 ```
 
 **文件统计：**
-- 44 个 SKILL.md 文件（29 组件 + 7 交互 + 8 工作流）
-- 29 个 template.md 文件（每个组件技能一个）
-- 44 个 examples/sample.md 文件（每个技能一个）
+- 45 个 SKILL.md 文件（30 组件 + 7 交互 + 8 工作流）
+- 30 个 template.md 文件（每个组件技能一个）
+- 45 个 examples/sample.md 文件（每个技能一个）
 - 10 个命令工作流文件
 - **127+ 个 Markdown 文件**
 

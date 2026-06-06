@@ -1,6 +1,6 @@
 # RE-Skills: Complete Skill Catalog
 
-Complete listing of all 44 requirements engineering skills — 29 component, 7 interactive, 8 workflow.
+Complete listing of all 45 requirements engineering skills — 30 component, 7 interactive, 8 workflow.
 
 Based on *Software Requirements, Third Edition* by Karl Wiegers & Joy Beatty.
 
@@ -19,47 +19,48 @@ Based on *Software Requirements, Third Edition* by Karl Wiegers & Joy Beatty.
 | 7 | [`change-impact-analysis`](skills/change-impact-analysis/SKILL.md) | Component | Management | Assess implications, affected work products, and effort for a proposed change |
 | 8 | [`context-diagram`](skills/context-diagram/SKILL.md) | Component | Foundation | Define system boundaries with external entities and data flows |
 | 9 | [`data-dictionary`](skills/data-dictionary/SKILL.md) | Component | Specification | Define data elements and structures using formal notation and CRUD analysis |
-| 10 | [`data-modeling`](skills/data-modeling/SKILL.md) | Component | Analysis | Create entity-relationship diagrams for data entities, attributes, and relationships |
-| 11 | [`decision-table`](skills/decision-table/SKILL.md) | Component | Analysis | Specify complex combinatorial business logic with decision tables and trees |
-| 12 | [`dialog-map`](skills/dialog-map/SKILL.md) | Component | Analysis | Model user-system navigation flows, screen inventories, and transition rules |
-| 13 | [`elicitation-interview`](skills/elicitation-interview/SKILL.md) | Component | Elicitation | Plan and conduct stakeholder interviews using structured question progressions |
-| 14 | [`elicitation-technique-selector`](skills/elicitation-technique-selector/SKILL.md) | Interactive | Elicitation | Choose the right elicitation technique based on project context and constraints |
-| 15 | [`moscow-prioritization`](skills/moscow-prioritization/SKILL.md) | Component | Prioritization | Categorize requirements into Must/Should/Could/Won't with allocation guidelines |
-| 16 | [`observation-analysis`](skills/observation-analysis/SKILL.md) | Component | Elicitation | Discover unstated requirements by watching users work in their environment |
-| 17 | [`prioritization-advisor-re`](skills/prioritization-advisor-re/SKILL.md) | Interactive | Prioritization | Select a prioritization method — MoSCoW, value/cost/risk, pairwise, $100, or others |
-| 18 | [`process-modeling`](skills/process-modeling/SKILL.md) | Component | Analysis | Create activity diagrams and swim-lane diagrams for cross-functional processes |
-| 19 | [`prototyping-strategy`](skills/prototyping-strategy/SKILL.md) | Interactive | Validation | Select the right prototyping approach based on risks, uncertainty, and evaluation needs |
-| 20 | [`quality-attribute`](skills/quality-attribute/SKILL.md) | Component | Specification | Specify NFRs with Planguage notation — measurable scales, goals, and trade-offs |
-| 21 | [`questionnaire-design`](skills/questionnaire-design/SKILL.md) | Component | Elicitation | Design requirements questionnaires with effective questions and bias-resistant ordering |
-| 22 | [`re-process-improvement`](skills/re-process-improvement/SKILL.md) | Workflow | Cross-Cutting | Assess, plan, pilot, and measure improvements to your RE processes |
-| 23 | [`re-tool-selection`](skills/re-tool-selection/SKILL.md) | Interactive | Cross-Cutting | Select and evaluate requirements engineering tools based on project context |
-| 24 | [`requirements-analysis-process`](skills/requirements-analysis-process/SKILL.md) | Workflow | Analysis | Transform raw elicitation outputs into analyzed, modeled requirements |
-| 25 | [`requirements-baselining`](skills/requirements-baselining/SKILL.md) | Component | Management | Establish baselines with version control and approval processes |
-| 26 | [`requirements-development-process`](skills/requirements-development-process/SKILL.md) | Workflow | Cross-Cutting | Orchestrate the complete RE development lifecycle from vision through validation |
-| 27 | [`requirements-elicitation-workshop`](skills/requirements-elicitation-workshop/SKILL.md) | Workflow | Elicitation | Plan and execute structured elicitation sessions using multiple techniques |
-| 28 | [`requirements-management-process`](skills/requirements-management-process/SKILL.md) | Workflow | Management | Establish baselines, version control, attribute tracking, and status monitoring |
-| 29 | [`requirements-reuse`](skills/requirements-reuse/SKILL.md) | Component | Cross-Cutting | Reuse requirements across projects using patterns, catalogs, and product-line strategies |
-| 30 | [`requirements-review-advisor`](skills/requirements-review-advisor/SKILL.md) | Interactive | Validation | Choose and plan review approaches from walkthroughs to Fagan inspections |
-| 31 | [`requirements-risk-assessment`](skills/requirements-risk-assessment/SKILL.md) | Component | Cross-Cutting | Identify and mitigate risks specific to requirements engineering |
-| 32 | [`requirements-status-tracking`](skills/requirements-status-tracking/SKILL.md) | Component | Management | Track requirements through their lifecycle from Proposed to Verified |
-| 33 | [`requirements-testing`](skills/requirements-testing/SKILL.md) | Component | Validation | Derive test cases from requirements to verify testability and plan acceptance testing |
-| 34 | [`requirements-traceability`](skills/requirements-traceability/SKILL.md) | Component | Management | Build traceability matrices linking objectives, requirements, design, and tests |
-| 35 | [`requirements-validation-process`](skills/requirements-validation-process/SKILL.md) | Workflow | Validation | Validate requirements through reviews, inspections, prototyping, and conceptual testing |
-| 36 | [`specification-review-checklist`](skills/specification-review-checklist/SKILL.md) | Component | Validation | Review requirements and SRS documents using structured quality checklists |
-| 37 | [`srs-document`](skills/srs-document/SKILL.md) | Component | Specification | Build a Software Requirements Specification with EARS templates and labeling |
-| 38 | [`stakeholder-analysis`](skills/stakeholder-analysis/SKILL.md) | Component | Foundation | Identify and classify stakeholders, user classes, and their influence |
-| 39 | [`state-modeling`](skills/state-modeling/SKILL.md) | Component | Analysis | Create state-transition diagrams and state tables for object lifecycle behavior |
-| 40 | [`use-case`](skills/use-case/SKILL.md) | Component | Analysis | Write structured use case specifications with triggers, flows, and exceptions |
-| 41 | [`user-story-re`](skills/user-story-re/SKILL.md) | Component | Analysis | Write requirements-focused user stories with INVEST criteria and acceptance criteria |
-| 42 | [`value-cost-risk-analysis`](skills/value-cost-risk-analysis/SKILL.md) | Component | Prioritization | Prioritize requirements using a multi-factor value/cost/risk scoring model |
-| 43 | [`vision-and-scope`](skills/vision-and-scope/SKILL.md) | Component | Foundation | Create a vision and scope document with business objectives and scope boundaries |
-| 44 | [`writing-requirements`](skills/writing-requirements/SKILL.md) | Component | Specification | Write clear, testable requirements using EARS templates and quality checklists |
+| 10 | [`data-flow-diagram`](skills/data-flow-diagram/SKILL.md) | Component | Analysis | 创建分层数据流图（DFD），将系统分解为过程、数据存储和数据流 |
+| 11 | [`data-modeling`](skills/data-modeling/SKILL.md) | Component | Analysis | Create entity-relationship diagrams for data entities, attributes, and relationships |
+| 12 | [`decision-table`](skills/decision-table/SKILL.md) | Component | Analysis | Specify complex combinatorial business logic with decision tables and trees |
+| 13 | [`dialog-map`](skills/dialog-map/SKILL.md) | Component | Analysis | Model user-system navigation flows, screen inventories, and transition rules |
+| 14 | [`elicitation-interview`](skills/elicitation-interview/SKILL.md) | Component | Elicitation | Plan and conduct stakeholder interviews using structured question progressions |
+| 15 | [`elicitation-technique-selector`](skills/elicitation-technique-selector/SKILL.md) | Interactive | Elicitation | Choose the right elicitation technique based on project context and constraints |
+| 16 | [`moscow-prioritization`](skills/moscow-prioritization/SKILL.md) | Component | Prioritization | Categorize requirements into Must/Should/Could/Won't with allocation guidelines |
+| 17 | [`observation-analysis`](skills/observation-analysis/SKILL.md) | Component | Elicitation | Discover unstated requirements by watching users work in their environment |
+| 18 | [`prioritization-advisor-re`](skills/prioritization-advisor-re/SKILL.md) | Interactive | Prioritization | Select a prioritization method — MoSCoW, value/cost/risk, pairwise, $100, or others |
+| 19 | [`process-modeling`](skills/process-modeling/SKILL.md) | Component | Analysis | Create activity diagrams and swim-lane diagrams for cross-functional processes |
+| 20 | [`prototyping-strategy`](skills/prototyping-strategy/SKILL.md) | Interactive | Validation | Select the right prototyping approach based on risks, uncertainty, and evaluation needs |
+| 21 | [`quality-attribute`](skills/quality-attribute/SKILL.md) | Component | Specification | Specify NFRs with Planguage notation — measurable scales, goals, and trade-offs |
+| 22 | [`questionnaire-design`](skills/questionnaire-design/SKILL.md) | Component | Elicitation | Design requirements questionnaires with effective questions and bias-resistant ordering |
+| 23 | [`re-process-improvement`](skills/re-process-improvement/SKILL.md) | Workflow | Cross-Cutting | Assess, plan, pilot, and measure improvements to your RE processes |
+| 24 | [`re-tool-selection`](skills/re-tool-selection/SKILL.md) | Interactive | Cross-Cutting | Select and evaluate requirements engineering tools based on project context |
+| 25 | [`requirements-analysis-process`](skills/requirements-analysis-process/SKILL.md) | Workflow | Analysis | Transform raw elicitation outputs into analyzed, modeled requirements |
+| 26 | [`requirements-baselining`](skills/requirements-baselining/SKILL.md) | Component | Management | Establish baselines with version control and approval processes |
+| 27 | [`requirements-development-process`](skills/requirements-development-process/SKILL.md) | Workflow | Cross-Cutting | Orchestrate the complete RE development lifecycle from vision through validation |
+| 28 | [`requirements-elicitation-workshop`](skills/requirements-elicitation-workshop/SKILL.md) | Workflow | Elicitation | Plan and execute structured elicitation sessions using multiple techniques |
+| 29 | [`requirements-management-process`](skills/requirements-management-process/SKILL.md) | Workflow | Management | Establish baselines, version control, attribute tracking, and status monitoring |
+| 30 | [`requirements-reuse`](skills/requirements-reuse/SKILL.md) | Component | Cross-Cutting | Reuse requirements across projects using patterns, catalogs, and product-line strategies |
+| 31 | [`requirements-review-advisor`](skills/requirements-review-advisor/SKILL.md) | Interactive | Validation | Choose and plan review approaches from walkthroughs to Fagan inspections |
+| 32 | [`requirements-risk-assessment`](skills/requirements-risk-assessment/SKILL.md) | Component | Cross-Cutting | Identify and mitigate risks specific to requirements engineering |
+| 33 | [`requirements-status-tracking`](skills/requirements-status-tracking/SKILL.md) | Component | Management | Track requirements through their lifecycle from Proposed to Verified |
+| 34 | [`requirements-testing`](skills/requirements-testing/SKILL.md) | Component | Validation | Derive test cases from requirements to verify testability and plan acceptance testing |
+| 35 | [`requirements-traceability`](skills/requirements-traceability/SKILL.md) | Component | Management | Build traceability matrices linking objectives, requirements, design, and tests |
+| 36 | [`requirements-validation-process`](skills/requirements-validation-process/SKILL.md) | Workflow | Validation | Validate requirements through reviews, inspections, prototyping, and conceptual testing |
+| 37 | [`specification-review-checklist`](skills/specification-review-checklist/SKILL.md) | Component | Validation | Review requirements and SRS documents using structured quality checklists |
+| 38 | [`srs-document`](skills/srs-document/SKILL.md) | Component | Specification | Build a Software Requirements Specification with EARS templates and labeling |
+| 39 | [`stakeholder-analysis`](skills/stakeholder-analysis/SKILL.md) | Component | Foundation | Identify and classify stakeholders, user classes, and their influence |
+| 40 | [`state-modeling`](skills/state-modeling/SKILL.md) | Component | Analysis | Create state-transition diagrams and state tables for object lifecycle behavior |
+| 41 | [`use-case`](skills/use-case/SKILL.md) | Component | Analysis | Write structured use case specifications with triggers, flows, and exceptions |
+| 42 | [`user-story-re`](skills/user-story-re/SKILL.md) | Component | Analysis | Write requirements-focused user stories with INVEST criteria and acceptance criteria |
+| 43 | [`value-cost-risk-analysis`](skills/value-cost-risk-analysis/SKILL.md) | Component | Prioritization | Prioritize requirements using a multi-factor value/cost/risk scoring model |
+| 44 | [`vision-and-scope`](skills/vision-and-scope/SKILL.md) | Component | Foundation | Create a vision and scope document with business objectives and scope boundaries |
+| 45 | [`writing-requirements`](skills/writing-requirements/SKILL.md) | Component | Specification | Write clear, testable requirements using EARS templates and quality checklists |
 
 ---
 
 ## By Type
 
-### Component Skills (29)
+### Component Skills (30)
 
 Templates, artifacts, and specification formats that produce specific RE deliverables.
 
@@ -70,30 +71,31 @@ Templates, artifacts, and specification formats that produce specific RE deliver
 | 3 | `change-impact-analysis` | Management | 3-step analysis, affected work products, effort estimation |
 | 4 | `context-diagram` | Foundation | DFD Level 0, external entities, data flows, system boundary |
 | 5 | `data-dictionary` | Specification | BNF notation, CRUD matrix, data element composition |
-| 6 | `data-modeling` | Analysis | ERD (Chen/crow's foot), cardinality, participation constraints |
-| 7 | `decision-table` | Analysis | Limited/extended-entry, completeness check, simplification |
-| 8 | `dialog-map` | Analysis | Screen inventory, navigation paths, transition rules |
-| 9 | `elicitation-interview` | Elicitation | Context-free/specific questions, active listening, The Mom Test |
-| 10 | `moscow-prioritization` | Prioritization | Must/Should/Could/Won't, 60/20/20 rule, timeboxed delivery |
-| 11 | `observation-analysis` | Elicitation | Active/passive observation, workaround detection |
-| 12 | `process-modeling` | Analysis | Activity diagrams, swim-lanes, handoff identification |
-| 13 | `quality-attribute` | Specification | Planguage (Scale/Meter/Goal/Fail), trade-off matrix, ISO 25010 |
-| 14 | `questionnaire-design` | Elicitation | Open/closed questions, Likert scales, bias avoidance |
-| 15 | `requirements-baselining` | Management | Version labeling, entry criteria, configuration management |
-| 16 | `requirements-reuse` | Cross-Cutting | Patterns (Withall), product lines, reuse repository |
-| 17 | `requirements-risk-assessment` | Cross-Cutting | Condition-consequence, risk exposure, RE-specific risk factors |
-| 18 | `requirements-status-tracking` | Management | Status lifecycle (9 states), burndown, progress reporting |
-| 19 | `requirements-testing` | Validation | Test derivation from use cases, conceptual testing, fit criteria |
-| 20 | `requirements-traceability` | Management | RTM, 5 link types, coverage analysis, suspect links |
-| 21 | `specification-review-checklist` | Validation | 10 requirement qualities, 8 SRS qualities, defect taxonomy |
-| 22 | `srs-document` | Specification | IEEE 29148 template, EARS patterns, labeling conventions |
-| 23 | `stakeholder-analysis` | Foundation | 6 categories, Power/Interest grid, product champion model |
-| 24 | `state-modeling` | Analysis | STD, state tables, transition-based requirement derivation |
-| 25 | `use-case` | Analysis | Cockburn levels, 13-element anatomy, exception handling |
-| 26 | `user-story-re` | Analysis | INVEST criteria, Cohn format, story hierarchy, splitting |
-| 27 | `value-cost-risk-analysis` | Prioritization | Benefit/penalty/cost/risk scoring, priority formula |
-| 28 | `vision-and-scope` | Foundation | Business objectives, Moore vision statement, scope boundaries |
-| 29 | `writing-requirements` | Specification | EARS templates, ambiguity avoidance, shall conventions |
+| 6 | `data-flow-diagram` | Analysis | DFD Level 0/1, 过程分解, 数据存储, 平衡验证 |
+| 7 | `data-modeling` | Analysis | ERD (Chen/crow's foot), cardinality, participation constraints |
+| 8 | `decision-table` | Analysis | Limited/extended-entry, completeness check, simplification |
+| 9 | `dialog-map` | Analysis | Screen inventory, navigation paths, transition rules |
+| 10 | `elicitation-interview` | Elicitation | Context-free/specific questions, active listening, The Mom Test |
+| 11 | `moscow-prioritization` | Prioritization | Must/Should/Could/Won't, 60/20/20 rule, timeboxed delivery |
+| 12 | `observation-analysis` | Elicitation | Active/passive observation, workaround detection |
+| 13 | `process-modeling` | Analysis | Activity diagrams, swim-lanes, handoff identification |
+| 14 | `quality-attribute` | Specification | Planguage (Scale/Meter/Goal/Fail), trade-off matrix, ISO 25010 |
+| 15 | `questionnaire-design` | Elicitation | Open/closed questions, Likert scales, bias avoidance |
+| 16 | `requirements-baselining` | Management | Version labeling, entry criteria, configuration management |
+| 17 | `requirements-reuse` | Cross-Cutting | Patterns (Withall), product lines, reuse repository |
+| 18 | `requirements-risk-assessment` | Cross-Cutting | Condition-consequence, risk exposure, RE-specific risk factors |
+| 19 | `requirements-status-tracking` | Management | Status lifecycle (9 states), burndown, progress reporting |
+| 20 | `requirements-testing` | Validation | Test derivation from use cases, conceptual testing, fit criteria |
+| 21 | `requirements-traceability` | Management | RTM, 5 link types, coverage analysis, suspect links |
+| 22 | `specification-review-checklist` | Validation | 10 requirement qualities, 8 SRS qualities, defect taxonomy |
+| 23 | `srs-document` | Specification | IEEE 29148 template, EARS patterns, labeling conventions |
+| 24 | `stakeholder-analysis` | Foundation | 6 categories, Power/Interest grid, product champion model |
+| 25 | `state-modeling` | Analysis | STD, state tables, transition-based requirement derivation |
+| 26 | `use-case` | Analysis | Cockburn levels, 13-element anatomy, exception handling |
+| 27 | `user-story-re` | Analysis | INVEST criteria, Cohn format, story hierarchy, splitting |
+| 28 | `value-cost-risk-analysis` | Prioritization | Benefit/penalty/cost/risk scoring, priority formula |
+| 29 | `vision-and-scope` | Foundation | Business objectives, Moore vision statement, scope boundaries |
+| 30 | `writing-requirements` | Specification | EARS templates, ambiguity avoidance, shall conventions |
 
 ### Interactive Skills (7)
 
@@ -145,18 +147,19 @@ Skills for gathering requirements from stakeholders.
 4. [`questionnaire-design`](skills/questionnaire-design/SKILL.md) — Design requirements surveys
 5. [`requirements-elicitation-workshop`](skills/requirements-elicitation-workshop/SKILL.md) — Run elicitation sessions (Workflow)
 
-### Phase 3: Analysis & Modeling (10 skills)
+### Phase 3: Analysis & Modeling (11 skills)
 Skills for analyzing, modeling, and structuring requirements.
 
 1. [`analysis-advisor`](skills/analysis-advisor/SKILL.md) — Choose modeling techniques (Interactive)
 2. [`use-case`](skills/use-case/SKILL.md) — Use case specifications
 3. [`user-story-re`](skills/user-story-re/SKILL.md) — User stories for RE
 4. [`process-modeling`](skills/process-modeling/SKILL.md) — Activity and swim-lane diagrams
-5. [`data-modeling`](skills/data-modeling/SKILL.md) — Entity-relationship diagrams
-6. [`state-modeling`](skills/state-modeling/SKILL.md) — State-transition diagrams
-7. [`decision-table`](skills/decision-table/SKILL.md) — Decision tables and trees
-8. [`dialog-map`](skills/dialog-map/SKILL.md) — UI navigation flows
-9. [`requirements-analysis-process`](skills/requirements-analysis-process/SKILL.md) — Full analysis workflow (Workflow)
+5. [`data-flow-diagram`](skills/data-flow-diagram/SKILL.md) — 分层数据流图（DFD Level 0/1）
+6. [`data-modeling`](skills/data-modeling/SKILL.md) — Entity-relationship diagrams
+7. [`state-modeling`](skills/state-modeling/SKILL.md) — State-transition diagrams
+8. [`decision-table`](skills/decision-table/SKILL.md) — Decision tables and trees
+9. [`dialog-map`](skills/dialog-map/SKILL.md) — UI navigation flows
+10. [`requirements-analysis-process`](skills/requirements-analysis-process/SKILL.md) — Full analysis workflow (Workflow)
 
 ### Phase 4: Specification (6 skills)
 Skills for documenting requirements formally.
@@ -244,13 +247,13 @@ How skills map to *Software Requirements, Third Edition* chapters:
 
 | Metric | Count |
 |--------|-------|
-| Total skills | 44 |
-| Component skills | 29 |
+| Total skills | 45 |
+| Component skills | 30 |
 | Interactive skills | 7 |
 | Workflow skills | 8 |
-| SKILL.md files | 44 |
-| template.md files | 29 |
-| examples/sample.md files | 44 |
-| Total markdown files | 117 |
+| SKILL.md files | 45 |
+| template.md files | 30 |
+| examples/sample.md files | 45 |
+| Total markdown files | 120 |
 | RE phases covered | 8 |
 | Book chapters mapped | 25+ |

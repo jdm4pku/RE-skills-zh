@@ -59,7 +59,7 @@ Process a requirements change request through impact analysis.
 - Path: `commands/analyze-change.md`
 
 ### /model-requirements
-创建完整的需求建模文档，涵盖功能模型（用例）、行为模型（流程/状态/决策/会话）和数据模型（ER图），生成 PlantUML 图表并渲染为图片，输出 Markdown 文档。
-- **Uses:** use-case, process-modeling, state-modeling, decision-table, dialog-map, data-modeling
-- **Outputs:** Markdown 建模文档（含内嵌图片）、用例规约+用例图、流程模型、状态模型、决策表、会话图、ER 图、交叉验证报告
+创建完整的需求建模文档，涵盖功能模型（用例）、行为模型（活动图/序列图/状态/决策/会话）和数据模型（DFD + ER图），生成 PlantUML 图表并渲染为图片，输出 Markdown 文档。
+- **Uses:** use-case, process-modeling, state-modeling, decision-table, dialog-map, data-flow-diagram, data-modeling
+- **Outputs:** Markdown 建模文档（含内嵌图片）、用例规约+用例图、每个用例的活动图和序列图、系统状态全局概览+详细状态图、决策表、系统全局导航图+详细会话图、DFD（Level 0 + Level 1）、ER 图、交叉验证报告
 - Path: `commands/model-requirements.md`

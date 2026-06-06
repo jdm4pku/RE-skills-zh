@@ -19,6 +19,9 @@ Generated from `skills/*/SKILL.md`. Do not edit manually.
 - `data-dictionary` - Define data elements, structures, and compositions using formal data dictionary notation. Use when documenting the data model to eliminate ambiguity about what each data item means, contains, and how it relates to other data.
   - `skills/data-dictionary/SKILL.md`
 
+- `data-flow-diagram` - 创建分层数据流图（DFD），将系统分解为过程、数据存储和数据流。在需要理解系统内部数据处理逻辑和信息流向时使用。
+  - `skills/data-flow-diagram/SKILL.md`
+
 - `data-modeling` - Create entity-relationship diagrams (ERDs) to model data entities, attributes, and relationships. Use when requirements involve structured data and you need to visualize how entities relate to each other.
   - `skills/data-modeling/SKILL.md`
 

@@ -1,5 +1,5 @@
 generated_from: skills/*/SKILL.md
-count: 44
+count: 45
 skills:
 - name: acceptance-criteria
   description: Write testable acceptance criteria and acceptance tests for requirements using Given/When/Then, checklist, and rule-based formats. Use when defining the conditions that prove a requirement is correctly implemented.
@@ -55,6 +55,12 @@ skills:
   path: skills/data-dictionary/SKILL.md
   intent: >-
     Create a structured data dictionary that formally defines every data element referenced in requirements, including primitive types, composite structures, repeating groups, and valid values. Use this to eliminate the ambiguity that comes from undefined terms like "customer information" or "order details," to detect missing requirements by analyzing data flows, and to provide developers with precise data specifications. Includes CRUD matrix analysis for completeness checking.
+- name: data-flow-diagram
+  description: 创建分层数据流图（DFD），将系统分解为过程、数据存储和数据流。在需要理解系统内部数据处理逻辑和信息流向时使用。
+  type: component
+  path: skills/data-flow-diagram/SKILL.md
+  intent: >-
+    从上下文图出发，将系统内部分解为过程、数据存储和数据流，形成分层数据流图（Level 0 和 Level 1）。帮助需求工程师发现遗漏的处理逻辑和数据需求。DFD 是上下文图的自然延伸，也是数据字典和 SRS 的重要输入。
 - name: data-modeling
   description: Create entity-relationship diagrams (ERDs) to model data entities, attributes, and relationships. Use when requirements involve structured data and you need to visualize how entities relate to each other.
   type: component

@@ -6,11 +6,11 @@
 
 ## Repository Overview
 
-This repository contains **44 requirements engineering skills** organized into 3 types (component, interactive, workflow) across 8 phases of the RE lifecycle. All skills are derived from *Software Requirements, Third Edition* by Karl Wiegers & Joy Beatty.
+This repository contains **45 requirements engineering skills** organized into 3 types (component, interactive, workflow) across 8 phases of the RE lifecycle. All skills are derived from *Software Requirements, Third Edition* by Karl Wiegers & Joy Beatty.
 
 ### Skill Types
 
-- **Component Skills (29):** Self-contained templates and artifacts. Each has `SKILL.md`, `template.md`, and `examples/sample.md`.
+- **Component Skills (30):** Self-contained templates and artifacts. Each has `SKILL.md`, `template.md`, and `examples/sample.md`.
 - **Interactive Skills (7):** Multi-turn conversational flows with 3-4 adaptive questions and enumerated recommendations.
 - **Workflow Skills (8):** Multi-phase processes that orchestrate component and interactive skills.
 
@@ -73,7 +73,7 @@ docs/
 | Start a new project | `/develop-requirements` | `vision-and-scope` → `stakeholder-analysis` |
 | Gather requirements | `/elicit` | `elicitation-technique-selector` → technique skill |
 | Model requirements | `/analyze` | `analysis-advisor` → modeling skills |
-| Create full modeling doc | `/model-requirements` | `use-case` + `process-modeling` + `state-modeling` + `dialog-map` + `data-modeling` |
+| Create full modeling doc | `/model-requirements` | `use-case` + `process-modeling` + `state-modeling` + `dialog-map` + `data-flow-diagram` + `data-modeling` |
 | Write the SRS | `/write-srs` | `srs-document` + `writing-requirements` |
 | Specify NFRs | — | `quality-attribute` |
 | Review requirements | `/validate` | `requirements-review-advisor` → `requirements-validation-process` |
